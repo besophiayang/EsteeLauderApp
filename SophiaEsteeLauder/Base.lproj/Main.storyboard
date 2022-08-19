@@ -1,24 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SophiaEsteeLauder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG4-k8-DdS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="HXM-yQ-APf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EsteeLauderFirstBottle" translatesAutoresizingMaskIntoConstraints="NO" id="a0a-wu-h6j">
+                                                <rect key="frame" x="-40" y="965" width="495" height="340"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ojP-ed-52H" appends="YES" id="Ada-xi-fpJ"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="One_dropper_of_our_Advanced_Night_Repair_Serum_strengthens_skin_barrier_in_just_4_hours.__1_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Q6V-A5-Ga9">
+                                                <rect key="frame" x="120" y="857" width="289" height="274"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ESTEE LAUDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5X-MY-r9Y">
+                                                <rect key="frame" x="38" y="350" width="339" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scroll Down and Tap the Products to Learn More" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-xq-uO0">
+                                                <rect key="frame" x="80" y="747" width="254" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EsteeLauderCream" translatesAutoresizingMaskIntoConstraints="NO" id="apr-ZE-0fD">
+                                                <rect key="frame" x="11" y="1461" width="393" height="373"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="dkc-Dy-Src" appends="YES" id="Nvq-7v-MJD"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EsteeLauderFinalBottle" translatesAutoresizingMaskIntoConstraints="NO" id="0OE-sc-Wl2">
+                                                <rect key="frame" x="-118" y="1966" width="651" height="469"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="UwJ-vz-eGQ" appends="YES" id="h2G-zr-O6H"/>
+                                                </connections>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-Xh-6tG">
+                                                <rect key="frame" x="364" y="1693" width="24" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="45"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="kiN-Hs-Buo" kind="show" id="56t-AE-a7Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FE9-eV-ahJ">
+                                                <rect key="frame" x="364" y="2254" width="24" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="45"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="kiN-Hs-Buo" kind="show" id="6bE-XE-qq9"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Advanced_Night_Repair_Serum_2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-4P-c3d">
+                                                <rect key="frame" x="-34" y="1148" width="383" height="220"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cream_1__1_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="nkf-K6-sXF">
+                                                <rect key="frame" x="11" y="1428" width="488" height="214"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cream_2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="27G-Os-hSK">
+                                                <rect key="frame" x="5" y="1640" width="334" height="241"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Make_up_1__1_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="ILY-7f-eC0">
+                                                <rect key="frame" x="107" y="1909" width="314" height="315"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Makeup_2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="f85-Fe-nkD">
+                                                <rect key="frame" x="-65" y="2203" width="460" height="264"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lge-Vx-r5C">
+                                                <rect key="frame" x="364" y="1139" width="24" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="45"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="kiN-Hs-Buo" kind="show" id="EM4-SL-KBK"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADVANCED NIGHT REPAIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-xR-gWv">
+                                                <rect key="frame" x="88" y="418" width="238" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqF-YW-HEw">
+                                                <rect key="frame" x="126" y="307" width="25" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.082352941176470587" green="0.086274509803921567" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2500" id="ER2-nY-4xJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HXM-yQ-APf" firstAttribute="top" secondItem="wG4-k8-DdS" secondAttribute="top" id="LEb-1K-7qC"/>
+                                    <constraint firstAttribute="bottom" secondItem="HXM-yQ-APf" secondAttribute="bottom" id="gRO-8b-gbf"/>
+                                    <constraint firstItem="HXM-yQ-APf" firstAttribute="leading" secondItem="wG4-k8-DdS" secondAttribute="leading" id="gyF-dO-sjx"/>
+                                    <constraint firstAttribute="trailing" secondItem="HXM-yQ-APf" secondAttribute="trailing" id="z3A-Yk-Ya2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="wG4-k8-DdS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ezo-ET-QGx"/>
+                            <constraint firstItem="HXM-yQ-APf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2.79018" id="RAY-QP-fGe"/>
+                            <constraint firstAttribute="bottom" secondItem="wG4-k8-DdS" secondAttribute="bottom" id="ReD-Dd-pUV"/>
+                            <constraint firstItem="HXM-yQ-APf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aD1-WA-fCa"/>
+                            <constraint firstItem="wG4-k8-DdS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ndK-uX-nzt"/>
+                            <constraint firstItem="wG4-k8-DdS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vh5-Xl-J9n"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="imageView" destination="a0a-wu-h6j" id="Eei-Ts-PXV"/>
+                        <outlet property="imageViewCream" destination="apr-ZE-0fD" id="oLh-ec-12V"/>
+                        <outlet property="imageViewMakeup" destination="0OE-sc-Wl2" id="awf-nA-jiM"/>
+                        <outlet property="rightArrowButtonCream" destination="rNv-Xh-6tG" id="FK8-xY-fiu"/>
+                        <outlet property="rightArrowButtonDrop" destination="lge-Vx-r5C" id="wRi-hw-dli"/>
+                        <outlet property="rightArrowButtonMakeup" destination="FE9-eV-ahJ" id="OCU-W1-upZ"/>
+                        <outlet property="whiteLineImage" destination="Q6V-A5-Ga9" id="uNg-LY-U07"/>
+                        <outlet property="whiteLineImageCream" destination="nkf-K6-sXF" id="0bv-ke-qYb"/>
+                        <outlet property="whiteLineImageCreamTwo" destination="27G-Os-hSK" id="vTe-8f-Rd4"/>
+                        <outlet property="whiteLineImageDrop" destination="a9f-4P-c3d" id="C1Z-Vw-Dsg"/>
+                        <outlet property="whiteLineImageMakeup" destination="ILY-7f-eC0" id="oea-td-d2F"/>
+                        <outlet property="whiteLineImageMakeupTwo" destination="f85-Fe-nkD" id="gG8-eg-4V6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ojP-ed-52H">
+                    <connections>
+                        <action selector="tapImage:" destination="BYZ-38-t0r" id="B6O-uS-Er8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dkc-Dy-Src">
+                    <connections>
+                        <action selector="tapImageCream:" destination="BYZ-38-t0r" id="Ic5-QJ-fKl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UwJ-vz-eGQ">
+                    <connections>
+                        <action selector="tapImageMakeup:" destination="BYZ-38-t0r" id="bTB-Z7-Sug"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="C4C-vP-Aa7">
+            <objects>
+                <viewController id="kiN-Hs-Buo" customClass="secondViewController" customModule="SophiaEsteeLauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAG-NI-bw6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ths-Iy-8ru">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="mAq-G5-pvH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="90" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Lk-GbS">
+                                                <rect key="frame" x="39" y="648" width="337" height="756"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHOP OUR COLLECTION" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-vO-OPw">
+                                                <rect key="frame" x="39" y="17" width="337" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPb-Hf-tHe">
+                                                <rect key="frame" x="39" y="460" width="61" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="61x61_Image5" title=""/>
+                                                <connections>
+                                                    <action selector="firstButton:" destination="kiN-Hs-Buo" eventType="touchUpInside" id="lss-0E-Dbv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-f2-fXa">
+                                                <rect key="frame" x="108" y="460" width="61" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="61x61_Image4"/>
+                                                <connections>
+                                                    <action selector="secondButton:" destination="kiN-Hs-Buo" eventType="touchUpInside" id="7nn-0R-F4t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Est-I9-m5P">
+                                                <rect key="frame" x="177" y="460" width="61" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="61X61_Image1"/>
+                                                <connections>
+                                                    <action selector="thirdButton:" destination="kiN-Hs-Buo" eventType="touchUpInside" id="Ugu-Zy-0Px"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qti-0L-WBG">
+                                                <rect key="frame" x="246" y="460" width="61" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="61x61_Image3"/>
+                                                <connections>
+                                                    <action selector="fourthButton:" destination="kiN-Hs-Buo" eventType="touchUpInside" id="0LF-DV-7OT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjR-s3-ohL">
+                                                <rect key="frame" x="315" y="460" width="61" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="61x61_Image2"/>
+                                                <connections>
+                                                    <action selector="fifthButton:" destination="kiN-Hs-Buo" eventType="touchUpInside" id="oXF-i8-PlO"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EsteeLauderCollection" translatesAutoresizingMaskIntoConstraints="NO" id="48L-8S-JLm">
+                                                <rect key="frame" x="39" y="98" width="337" height="339"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWr-hn-599">
+                                                <rect key="frame" x="39" y="98" width="337" height="339"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p12-Y8-PWT">
+                                                <rect key="frame" x="39" y="548" width="337" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source: Estee Lauder, Estee Lauder Companies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP0-3d-Cyc">
+                                                <rect key="frame" x="14" y="1412" width="324" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0821742788" green="0.087488718330000007" blue="0.30327910180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="8SD-Fo-flA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mAq-G5-pvH" secondAttribute="bottom" id="4ZL-bl-c31"/>
+                                    <constraint firstItem="mAq-G5-pvH" firstAttribute="top" secondItem="ths-Iy-8ru" secondAttribute="top" id="N1A-98-tpo"/>
+                                    <constraint firstItem="mAq-G5-pvH" firstAttribute="leading" secondItem="ths-Iy-8ru" secondAttribute="leading" id="RQh-TG-ddg"/>
+                                    <constraint firstAttribute="trailing" secondItem="mAq-G5-pvH" secondAttribute="trailing" id="Uyx-Qb-Iqc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LJu-gR-yZW"/>
+                        <color key="backgroundColor" red="0.0821742788" green="0.087488718330000007" blue="0.30327910180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mAq-G5-pvH" firstAttribute="width" secondItem="NAG-NI-bw6" secondAttribute="width" id="FRc-OU-9XU"/>
+                            <constraint firstItem="ths-Iy-8ru" firstAttribute="top" secondItem="NAG-NI-bw6" secondAttribute="top" id="HE0-8s-HdD"/>
+                            <constraint firstItem="mAq-G5-pvH" firstAttribute="height" secondItem="NAG-NI-bw6" secondAttribute="height" multiplier="1.67411" id="SQT-O3-g6S"/>
+                            <constraint firstAttribute="bottom" secondItem="ths-Iy-8ru" secondAttribute="bottom" id="eA2-9Y-URL"/>
+                            <constraint firstItem="ths-Iy-8ru" firstAttribute="trailing" secondItem="LJu-gR-yZW" secondAttribute="trailing" id="eg1-Oz-9VH"/>
+                            <constraint firstItem="ths-Iy-8ru" firstAttribute="leading" secondItem="LJu-gR-yZW" secondAttribute="leading" id="zCJ-G7-kGu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vnl-AP-F72"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="emptyDescription" destination="8Ht-Lk-GbS" id="I2P-Ma-28z"/>
+                        <outlet property="emptyLabel" destination="p12-Y8-PWT" id="QT7-pY-dfx"/>
+                        <outlet property="imageView" destination="JWr-hn-599" id="s8N-Lf-Gtb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eid-cv-L9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EM4-SL-KBK"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="61X61_Image1" width="61" height="61"/>
+        <image name="61x61_Image2" width="61" height="61"/>
+        <image name="61x61_Image3" width="61" height="61"/>
+        <image name="61x61_Image4" width="61" height="61"/>
+        <image name="61x61_Image5" width="61" height="61"/>
+        <image name="Advanced_Night_Repair_Serum_2-removebg-preview" width="577" height="433"/>
+        <image name="Cream_1__1_-removebg-preview" width="577" height="433"/>
+        <image name="Cream_2-removebg-preview" width="577" height="433"/>
+        <image name="EsteeLauderCollection" width="1920" height="2208"/>
+        <image name="EsteeLauderCream" width="1920" height="1080"/>
+        <image name="EsteeLauderFinalBottle" width="1920" height="1080"/>
+        <image name="EsteeLauderFirstBottle" width="1920" height="1080"/>
+        <image name="Make_up_1__1_-removebg-preview" width="577" height="433"/>
+        <image name="Makeup_2-removebg-preview" width="577" height="433"/>
+        <image name="One_dropper_of_our_Advanced_Night_Repair_Serum_strengthens_skin_barrier_in_just_4_hours.__1_-removebg-preview" width="577" height="433"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
